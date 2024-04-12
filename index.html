@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Website Title -->
+
+  <title>Naeem Biker Zone</title>
+
+  <!-- Website Favicon -->
+
+  <link rel="shortcut icon" href="./images/website-logo.png" type="image/x-icon">
+
+  <!-- CSS External File Link -->
+
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- DaisyUI Link & Tailwind CSS Link -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="./tailwind.config.js"></script>
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Customs CSS -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+            'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- This Is Header Section -->
+
+  <header class="md:container md:mx-auto container mx-auto">
+
+    <!-- This Is Navbar Section -->
+
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-2xl shadow bg-base-100 rounded-box w-52 font-bold">
+              <li><a>Home</a></li>
+              <li><a>Gear</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn text-lg lg:text-4xl font-bold">Biker Zone</a>
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-2xl font-bold">
+            <li><a>Home</a></li>
+            <li><a>Gear</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn bg-bike-primary text-white hover:bg-bike-primary text-2xl">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar Section End -->
+
+    <!-- Slider Section Start -->
+
+    <div class="carousel w-full bg-bike-primary-bg lg:h-[550px]">
+
+      <!-- Slide 1 -->
+
+      <div id="slide1" class="carousel-item relative w-full">
+
+        <div class="flex flex-col lg:flex-row p-4 lg:p-24 gap-20">
+
+          <div class="space-y-7 flex-1">
+
+            <h2 class="text-5xl font-bold">
+              Ride On Kawasaki Z900RS
+
+              With Classic Race
+            </h2>
+
+            <p>
+              The Kawasaki Z900RS: a timeless blend of retro style and modern performance, roaring with a classic spirit
+              on today's roads.!</p>
+
+            <button class="btn bg-bike-primary text-white hover:bg-bike-primary ">Purchase</button>
+
+          </div>
+
+          <div class="flex-1">
+            <img src="./images/slider/bike1.png" class="w-[400px]" />
+          </div>
+
+        </div>
+
+
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row p-4 lg:p-24 gap-20">
+
+          <div class="space-y-7 flex-1">
+
+            <h2 class="text-5xl font-bold">
+              Ride On Ducati Monster
+
+              With Powerful Machine
+            </h2>
+
+            <p>Sleek and powerful, the Ducati Monster roars with Italian flair. A blend of style and performance, it's a
+              two-wheeled masterpiece!</p>
+
+            <button class="btn bg-bike-primary text-white hover:bg-bike-primary ">Purchase</button>
+
+          </div>
+
+          <div class="flex-1">
+            <img src="./images/slider/bike2.png" class="w-[400px]" />
+          </div>
+
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row p-4 lg:p-24 gap-20">
+
+          <div class="space-y-7 flex-1">
+
+            <h2 class="text-5xl font-bold">
+              Ride On R15 Triumph Daytona 675
+
+              With Powerful Roar.
+            </h2>
+
+            <p>With sleek curves and a powerful roar, Triumph Daytona 675, the road's allure.!</p>
+
+            <button class="btn bg-bike-primary text-white hover:bg-bike-primary ">Purchase</button>
+
+          </div>
+
+          <div class="flex-1">
+            <img src="./images/slider/bike3.png" class="w-[400px]" />
+          </div>
+
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row p-4 lg:p-24 gap-20">
+
+          <div class="space-y-7 flex-1">
+
+            <h2 class="text-5xl font-bold">
+              Ride On R15 Harley Davison
+
+              With Thunder Mechine.
+            </h2>
+
+            <p>Roaring thunder on two wheels, Harley Davidson's freedom appeals.!</p>
+
+            <button class="btn bg-bike-primary text-white hover:bg-bike-primary ">Purchase</button>
+
+          </div>
+
+          <div class="flex-1">
+            <img src="./images/slider/bike4.png" class="w-[400px]" />
+          </div>
+
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Section End -->
+
+  </header>
+
+  <!-- Header Section End -->
+
+
+  <!-- This Is Main Section -->
+
+  <main class="md:container md:mx-auto">
+
+    <!-- Feature Bike Section Start -->
+
+    <section class="my-20">
+
+      <h3 class="text-5xl mb-12 font-semibold text-center">Featured Bikes in this Year</h3>
+
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- First Bike -->
+
+        <div class="shadow-lg p-4">
+          <img src="./images/others/feature-bike.png" alt="">
+        </div>
+
+        <!-- Second Bike -->
+
+        <div class="shadow-lg p-4">
+          <img src="./images/others/feature-bike.png" alt="">
+        </div>
+
+        <!-- Third Bike -->
+
+        <div class="shadow-lg p-4">
+          <img src="./images/others/feature-bike.png" alt="">
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Featured Bike Section End -->
+
+
+    <!--Latest News Section Start  -->
+
+    <section class="my-20">
+
+      <h3 class="text-5xl mb-12 font-semibold text-center">Latest Bike</h3>
+
+      <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- First Card -->
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="./images/others/latest1.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-3xl">Ducati Diavel 1260</h2>
+            <p>Sleek lines meet raw power in the Ducati Diavel 1260, a masterpiece of Italian engineering.</p>
+            <div class="card-actions">
+              <button class="btn bg-bike-primary text-white hover:bg-bike-primary">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card -->
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="./images/others/latest2.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-3xl">Ducati XDiavel</h2>
+            <p>Sleek curves hug the road,
+              Powerful engine roars to life,
+              Ducati XDiavel, pure thrill on two wheels.</p>
+            <div class="card-actions">
+              <button class="btn bg-bike-primary text-white hover:bg-bike-primary">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card -->
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="./images/others/latest3.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-3xl">Ducati XDiavel S</h2>
+            <p>
+              The Ducati XDiavel S roars with power, sleek and sublime,
+              Its silhouette slicing through the wind, a design that’s prime.
+            </p>
+            <div class="card-actions">
+              <button class="btn bg-bike-primary text-white hover:bg-bike-primary">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Latest News Section End  -->
+
+    <!-- Happy Clients Section Start -->
+
+    <section class="my-20">
+
+      <h3 class="text-5xl mb-12 font-semibold text-center">Happy <span class="text-bike-primary">Client Says</span></h3>
+
+      <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- First Client -->
+
+        <div class="card bg-base-100 p-9 border border-gray-400">
+          <figure><img class="w-36" src="./images/others/user-1.png" alt="Shoes" /></figure>
+          <div class="card-body">
+
+            <p>The selection at this dealership is impressive, catering to both novice riders and seasoned cyclists.
+              Whether you're in the market for a sleek road bike or a rugged mountain bike, they have a wide range of
+              options to suit every preference and budget. The showroom is well-organized, making it easy to browse and
+              compare different models, and the staff is always on hand to provide expert advice and answer any
+              questions you may have.</p>
+
+            <div class="rating justify-center">
+
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+
+            <div class="text-center space-y-4 mt-4">
+              <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
+
+              <p>Banker</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Client -->
+
+        <div class="card bg-base-100 p-9 border border-gray-400">
+          <figure><img class="w-36" src="./images/others/user-2.png" alt="Shoes" /></figure>
+          <div class="card-body">
+
+            <p>The purchasing process was smooth and hassle-free from start to finish. The sales team was attentive and
+              patient, taking the time to understand my needs and guide me towards the perfect bike. They were
+              transparent about pricing, offering competitive rates without any hidden fees or surprises. Additionally,
+              the financing options they provided were flexible and tailored to my financial situation, making it easier
+              to invest in my new ride.</p>
+
+            <div class="rating justify-center">
+
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+
+            <div class="text-center space-y-4 mt-4">
+              <h4 class="text-sm font-semibold text-info">Goki Kaowa</h4>
+
+              <p>Engineer</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Third Client -->
+
+        <div class="card bg-base-100 p-9 border border-gray-400">
+          <figure><img class="w-36" src="./images/others/user-3.png" alt="Shoes" /></figure>
+          <div class="card-body">
+
+            <p>The after-sales service has been exceptional. The dealership offers comprehensive maintenance and repair
+              services, ensuring that my bike stays in top condition for years to come. The staff is friendly and
+              accommodating, always willing to go the extra mile to ensure customer satisfaction. Overall, my experience
+              with this dealership has been nothing short of outstanding, and I wouldn't hesitate to recommend them to
+              anyone in search of a quality bike and exceptional service.</p>
+
+            <div class="rating justify-center">
+
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+
+            <div class="text-center space-y-4 mt-4">
+              <h4 class="text-sm font-semibold text-info">Alija Fili</h4>
+
+              <p>Designer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Happy Clients Section End -->
+
+    <!-- Frequently Question Ask Section Start  -->
+
+    <section class="my-20">
+
+      <h3 class="text-5xl mb-1 font-semibold text-center">Frequently Asked <span
+          class="text-bike-primary">Question</span></h3>
+
+      <div class="hero">
+
+        <div class="hero-content flex-col lg:gap-24 lg:flex-row">
+          <img src="./images/others/faq.png" class="w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
+
+
+          <div>
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                1. What types of bikes do you offer?
+              </div>
+              <div class="collapse-content">
+                <p>We offer a wide range of bikes, including road bikes, mountain bikes, hybrid bikes, electric bikes,
+                  and kids' bikes, catering to various cycling needs and preferences.
+                </p>
+              </div>
+            </div>
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                2. Do you offer test rides?
+
+
+              </div>
+              <div class="collapse-content">
+                <p>Yes, we encourage customers to take test rides to ensure they find a bike that is comfortable and
+                  suits their riding style. Please contact our showroom to schedule a test ride.
+                </p>
+              </div>
+            </div>
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                3. What brands do you carry?
+
+
+              </div>
+              <div class="collapse-content">
+                <p>We carry a variety of reputable brands known for their quality and performance, such as Trek, Giant,
+                  Specialized, Cannondale, and many more.
+                </p>
+              </div>
+            </div>
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                4. Do you provide bike fitting services?
+
+
+              </div>
+              <div class="collapse-content">
+                <p>Absolutely, our trained staff can provide professional bike fitting services to ensure your bike is
+                  adjusted to fit your body perfectly, enhancing comfort and performance.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                5. What financing options are available?
+
+
+              </div>
+              <div class="collapse-content">
+                <p>We offer various financing options tailored to fit your budget, including installment plans, credit
+                  card payments, and financing through third-party providers.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                6. Do you offer maintenance and repair services?
+
+
+              </div>
+              <div class="collapse-content">
+                <p>Yes, our experienced mechanics provide comprehensive maintenance and repair services to keep your
+                  bike in top condition. We also offer tune-ups, part replacements, and warranty repairs.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                7. Can I trade in my old bike?
+
+
+              </div>
+              <div class="collapse-content">
+                <p>Yes, we accept trade-ins and offer competitive prices for pre-owned bikes. Please bring your bike to
+                  our showroom for a free evaluation and trade-in estimate.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                8. Do you sell bike accessories and gear?
+              </div>
+              <div class="collapse-content">
+                <p>Yes, we carry a wide selection of bike accessories and gear, including helmets, locks, lights,
+                  apparel, and cycling shoes, to enhance your riding experience and safety.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                9. What is your return and exchange policy?
+
+
+              </div>
+              <div class="collapse-content">
+                <p>We have a flexible return and exchange policy allowing customers to return or exchange their bike
+                  within a specified period if it is unused and in its original condition. Please refer to our policy
+                  for more details.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                10. Do you offer bike assembly and delivery services?
+
+
+              </div>
+              <div class="collapse-content">
+                <p>Yes, we provide professional bike assembly and delivery services to ensure your new bike is set up
+                  correctly and ready to ride. Charges may apply depending on the location and complexity of assembly.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Frequently Question Ask Section End  -->
+
+  </main>
+
+  <!-- Main Section End -->
+
+  <!-- Footer Section Start -->
+
+  <footer class="footer p-10 bg-neutral text-neutral-content">
+    <aside>
+      <p> &copy; Naeem Biker Zone <br>Your destination for top-quality motorcycles and unparalleled service.</p>
+    </aside>
+    <nav>
+      <h6 class="footer-title">Social</h6>
+      <div class="grid grid-cols-1 gap-4">
+        <a><img class="w-36" src="./images/others/android.png" alt=""></a>
+        <a><img class="w-36" src="./images/others/ios.png" alt=""></a>
+
+      </div>
+    </nav>
+  </footer>
+
+  <!-- Footer Section End -->
+
+</body>
+
+</html>
